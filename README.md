@@ -138,4 +138,4 @@ pip install -r requirements.txt
 python app.py
 ```
 
----
+![UI Screenshot](./frontend/src/assets/image.png)
