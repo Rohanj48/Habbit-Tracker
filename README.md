@@ -104,18 +104,6 @@ Response:
 npm install
 ```
 
-### Place Main File
-Put `Dashboard.jsx` inside:
-```
-src/App.jsx
-```
-
-### Tailwind Setup
-Ensure:
-- tailwind.config.js  
-- postcss.config.js  
-- index.css  
-
 ### Run App
 ```
 npm start
@@ -137,7 +125,7 @@ source .venv/bin/activate
 ```
 Windows:
 ```
-.\.venv\Scriptsctivate
+.\.venv\ScriptsActivate
 ```
 
 ### Install Requirements
@@ -151,8 +139,3 @@ python app.py
 ```
 
 ---
-
-## 🎉 Notes
-- Entire UI and logic live in Dashboard.jsx.
-- Backend must match API contracts.
-- Tailwind is required for styling.
