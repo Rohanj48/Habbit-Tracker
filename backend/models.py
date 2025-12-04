@@ -1,5 +1,3 @@
-# models.py
-
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from sqlalchemy import UniqueConstraint
@@ -25,19 +23,19 @@ class Habit(db.Model):
     __tablename__ = 'habit'
     
     habit_id = db.Column(db.Integer, primary_key=True)
+    
     name = db.Column(db.String(100), nullable=False)
     frequency = db.Column(db.String(10), nullable=False)
     category_id = db.Column(db.Integer, db.ForeignKey('category.category_id'), nullable=False)
     start_date = db.Column(db.Date, nullable=False)
     target_count = db.Column(db.Integer, nullable=False, default=1)
     
-    # --- UPDATED LINE HERE ---
-    created_at = db.Column(db.DateTime, nullable=False, default=datetime.now())
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
     check_ins = db.relationship('CheckIn', backref='habit', lazy=True)
 
     def __repr__(self):
-        return f"<Habit {self.name} ({self.frequency})>"
+        return f"<Habit {self.name}>" # Simplified representation
 
 # --- CheckIn Model ---
 class CheckIn(db.Model):

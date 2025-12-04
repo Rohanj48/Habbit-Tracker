@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 import Navbar from './components/navbar'
-import MyHabbits from './pages/MyHabbits'
+import Dashboard from './pages/Dashboard'
+
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     return (
         <div >
             <Navbar />
-            <MyHabbits />
+            <Dashboard />
         </div>
     )
 }
